@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Photographie – Papa Yamsar DIAGNE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Page photographie de Papa Yamsar DIAGNE – Sélection de clichés en lien avec la création de contenu, la ville, la food et les ambiances."
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">PY<span>DIAGNE</span></a>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html" class="active">À propos</a></li>
+    <li><a href="photography.html">Photographie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+      <button class="theme-toggle" id="theme-toggle" type="button">
+        <span class="theme-toggle-icon">🌙</span>
+        <span class="theme-toggle-label">Mode nuit</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-heading reveal">
+          <div class="section-kicker">Photographie</div>
+          <h1 class="page-title">Raconter visuellement une histoire, image par image</h1>
+          <p class="page-description">
+            La photo est pour moi un prolongement naturel de la création de contenu : capturer des ambiances, des détails
+            et des instants qui nourrissent le storytelling et l’univers de marque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="photo-grid">
+          <!-- Placeholders modifiables -->
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Street photography en ville"
+              data-caption="Street photography – jeux de lumière et ambiance urbaine."
+            />
+            <figcaption class="photo-overlay">
+              Street – Jeux de lumière
+            </figcaption>
+          </figure>
+
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1860208/pexels-photo-1860208.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Ambiance food"
+              data-caption="Food photography – valoriser les textures, les couleurs et la gourmandise."
+            />
+            <figcaption class="photo-overlay">
+              Food – Textures & couleurs
+            </figcaption>
+          </figure>
+
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Créateur de contenu au travail"
+              data-caption="Backstage de création de contenu – setup, cadre et ambiance."
+            />
+            <figcaption class="photo-overlay">
+              Backstage – Création de contenu
+            </figcaption>
+          </figure>
+
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Portrait urbain"
+              data-caption="Portrait – focus sur l’émotion et l’expression."
+            />
+            <figcaption class="photo-overlay">
+              Portrait – Expression
+            </figcaption>
+          </figure>
+
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Ambiance coffee shop"
+              data-caption="Ambiance café – lieu de travail, réflexion, inspiration."
+            />
+            <figcaption class="photo-overlay">
+              Coffee shop – Ambiance
+            </figcaption>
+          </figure>
+
+          <figure class="photo-item reveal">
+            <img
+              src="https://images.pexels.com/photos/1181543/pexels-photo-1181543.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Paysage au coucher du soleil"
+              data-caption="Paysage – lumière dorée et atmosphère calme."
+            />
+            <figcaption class="photo-overlay">
+              Golden hour – Paysage
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fermer la photo">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div>© <span id="year"></span> – Papa Yamsar DIAGNE. Tous droits réservés.</div>
+        <div>Stratégie digitale • Communication • Design & contenus.</div>
+      </div>
+
+      <div class="social-list">
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" class="social-link" aria-label="Snapchat"><i class="fa-brands fa-snapchat-ghost"></i></a>
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;">Design by</span>
+        <span class="footer-signature">YAMS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
